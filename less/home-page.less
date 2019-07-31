@@ -1,0 +1,143 @@
+// Home page styles here
+
+.feature-img {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media @mobile {
+        display: none;
+    }
+
+    @media @tablet {
+        margin-bottom: 0;
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+.middle {
+    font-family: Arial;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    .card {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0;
+
+        .card-text {
+            width: 40%;
+            margin: 120px 40px 0 40px;
+            line-height: 2;
+            vertical-align: center;
+
+            @media @mobile {
+                margin: 20px 0;
+                min-width: 100%;
+                justify-content: center;
+            }
+
+            @media @tablet {
+                justify-content: center;
+            }
+
+            @media @tablet {
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+
+            h2 {
+                @media @mobile {
+                    text-align: center;
+                }
+
+                @media @tablet {
+                    text-align: center;
+                }
+            }
+
+            p {
+                @media @mobile {
+                    margin: 0 20px;
+                }
+
+                @media @tablet {
+                    margin: 0 20px;
+                }
+            }
+        }
+
+        .card-img {
+            width: 60%;
+
+            @media @mobile {
+                margin: 0 auto 20px auto;
+                justify-content: center;
+                width: 100%;
+            }
+
+            @media @tablet {
+                margin: 0;
+                justify-content: center;
+                width: 100%;
+            }
+
+            @media @tablet {
+                justify-content: center;
+                width: 100%;
+            }
+
+            img {
+                @media @mobile {
+                    max-width: 100%;
+                }
+
+                @media @tablet {
+                    min-width: 100%;
+                }
+            }
+        }
+
+        @media @mobile {
+            margin-top: 0;
+            flex-direction: column;
+        }
+
+        @media @tablet {
+            margin: 20px 0;
+            flex-direction: column;
+        }
+        
+    }
+
+    @media @tablet {
+        flex-direction: column;
+    }
+}
+
+.bottom {
+
+    .cta {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    btn {
+        .button-transform();
+        margin-bottom: 20px;
+
+        @media @mobile {
+            max-width: 100%;
+            font-size: 2rem;
+        }
+
+        @media @tablet {
+            margin-top: 20px;
+        }
+    }
+}
